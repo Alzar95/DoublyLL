@@ -18,6 +18,8 @@ class LinkedList {
         }
 
         this.length++;
+
+        return this;
     }
 
     head() {
@@ -120,7 +122,7 @@ class LinkedList {
 
     indexOf(data) {
         var currentNode = this._head;
-        
+
         for(var i = 0; i < this.length; i++) {
             if(currentNode.data === data) {
                 return i;
